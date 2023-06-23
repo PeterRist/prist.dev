@@ -16,9 +16,20 @@
 		"jsx": "preserve",
 		"incremental": true,
 		"noUncheckedIndexedAccess": true,
-		"baseUrl": ".",
+//		"baseUrl": ".",
+//		"paths": {
+//			"~/*": ["./src/*"]
+//		}
+		"baseUrl": "src",
 		"paths": {
-			"~/*": ["./src/*"]
+			"@components/*": ["components/*"],
+		    "@api/*": ["pages/api/*"],
+		    "@pages/*": ["pages/*"],
+		    "@animation/*": ["styles/animation/*"],
+		    "@styles/*": ["styles/*"],
+		    "@utils/*": ["utils/*"],
+		    "@server/*": ["server/*"],
+		    "@images/*": ["../public/images/*"]
 		}
 	},
 	"include": [
