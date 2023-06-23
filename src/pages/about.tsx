@@ -16,9 +16,5 @@ export const getStaticProps: GetStaticProps<{
 export default function Page({
 	repo,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-	return (
-		<div className='text-5xl text-[hsl(280,100%,70%)]'>
-			{repo.stargazers_count}
-		</div>
-	)
+	return <div className='text-5xl'>{repo.stargazers_count}</div>
 }
