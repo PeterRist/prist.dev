@@ -4,7 +4,7 @@ export default function State() {
 	const [data, setData] = useState(null)
 
 	useEffect(() => {
-		fetch('https://pokeapi.co/api/v2/pokemon/ditto')
+		fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
 			.then((response) => response.json())
 			// eslint-disable-next-line @typescript-eslint/no-unsafe-argument
 			.then((json) => setData(json))
